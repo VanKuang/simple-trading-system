@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>other</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet"
+          type="text/css">
+    <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet" type="text/css">
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/vuetify/dist/vuetify.min.js"></script>
+    <script src="js/other.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <v-btn>Default</v-btn>
+
+    <v-btn success>Success</v-btn>
+
+    <v-btn info>Info</v-btn>
+
+    <v-btn warning>Warning</v-btn>
+
+    <v-btn error>Error</v-btn>
+
+    <v-btn disabled>Default Disabled</v-btn>
+
+    <v-btn success disabled>Success Disabled</v-btn>
+
+    <v-btn info disabled>Info Disabled</v-btn>
+
+    <v-btn warning disabled>Warning Disabled</v-btn>
+
+    <v-btn error disabled>Error Disabled</v-btn>
+
+
+    <v-btn v-dropdown:dropdown class="primary white--text">Click Dropdown</v-btn>
+    <v-dropdown id="dropdown" v-bind:items="items"></v-dropdown>
+
+    <v-btn v-dropdown:dropdown3 class="secondary white--text">Click With Labels</v-btn>
+    <v-dropdown id="dropdown3">
+        <li>
+            <a href="#!" class="dropdown__item">Profile
+                <v-chip label small class="teal white--text right">new</v-chip>
+            </a>
+        </li>
+        <li>
+            <a href="#!" class="dropdown__item">
+                <span v-badge:2>Notifications</span>
+            </a>
+        </li>
+        <li>
+            <a href="#!" class="dropdown__item">
+                Logout
+                <v-icon class="secondary--text right">cloud_off</v-icon>
+            </a>
+        </li>
+    </v-dropdown>
+
+    <v-progress-linear v-model="value"></v-progress-linear>
+
+    <v-sidebar height="40vh" v-bind:items="items"></v-sidebar>
+
+    <v-pagination v-bind:length.number="5" v-model="page"></v-pagination>
+</div>
+
+</body>
+</html>
