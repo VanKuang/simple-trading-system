@@ -1,4 +1,4 @@
-package cn.van.kuang.trading.repository;
+package cn.van.kuang.trading.booking.repository;
 
 import org.springframework.stereotype.Repository;
 

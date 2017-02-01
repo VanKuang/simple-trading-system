@@ -1,4 +1,4 @@
-package cn.van.kuang.trading.service;
+package cn.van.kuang.trading.booking.service;
 
 import org.springframework.stereotype.Service;
 
